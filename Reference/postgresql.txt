@@ -1,0 +1,2 @@
+"C:/Program Files/PostgreSQL/11/bin/pg_dump.exe" "--file=C:\Users\<your_user_name>\My Documents\dump.sql" --dbname=inspection_db --schema=public --username=postgres --host=localhost --port=5432
+"C:/Program Files/PostgreSQL/11/bin/pg_dump.exe" "--file=C:\Users\GoldRight\My Documents\dump1.sql" --dbname=inspection_db --schema=public --username=postgres --host=localhost --port=5432

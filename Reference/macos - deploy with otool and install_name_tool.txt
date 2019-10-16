@@ -1,0 +1,3 @@
+﻿otool -L executable
+-----show library dependences
+install_name_tool -change old_lib new_lib executable

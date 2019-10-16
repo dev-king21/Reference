@@ -1,0 +1,29 @@
+1.
+I can work full time until I finish your project.
+I can finish your project 2 ~ 3 weeks.
+2.
+I saw your app prototype.
+There are 119 screens in your app prototype.
+And App Language is not english, so i need all native language text appeared in your app.
+
+2.1 
+https://play.google.com/store/apps/details?id=com.eatstreet.android&hl=en : this is small project with 12 screens, so it is taken about 10 days to develop and distribute.
+https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=en : about 10 days.
+
+and I have developed with multi platform vpn app and web apps - https://shenyeymz.com/, https://huanjingvpn.com
+platform - windows, linux, macos, android, ios
+but macos, ios version for this app is not allowed because my ADP(Apple Developer Program) account is individual one, so i can't distributed this app now. (about 2 months + 2 weeks)
+
+2.2 
+I need one month for finishing to develop this app at least.
+
+3. 
+I have developed vpn apps before.
+This app developed by using of RESTful API and developed cooperatly with my colleague on github. 
+
+4. At the stage of developing and distributing apps, i can prepare the document for you to maintain and upgrade this app.
+And if you want anything more, I'll do this.
+
+The project is quite large, so i'll consider budgetary issues.
+
+Thank you so much for your attention.

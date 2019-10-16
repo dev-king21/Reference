@@ -1,0 +1,2 @@
+https://github.com/steelcode/art-hook-vtable-gsoc15/wiki
+	https://github.com/crmulliner/adbi

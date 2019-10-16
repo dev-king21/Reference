@@ -1,0 +1,3 @@
+google services 
+
+https://stackoverflow.com/questions/18543668/integrate-zxing-in-android-studio

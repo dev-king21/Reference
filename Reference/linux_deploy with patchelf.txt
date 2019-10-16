@@ -1,0 +1,5 @@
+sudo apt install patchelf 
+download patchelf.rpm ....
+
+patchelf --set-rpath '%path%' %binary%
+patchelf --print-rpath %binary%

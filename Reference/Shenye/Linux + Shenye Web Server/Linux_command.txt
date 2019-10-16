@@ -1,0 +1,18 @@
+172.105.205.139
+root
+Qldir123!@#
+
+https://www.looklinux.com/how-to-install-xampp-on-centosrhel-7-0/
+
+# yum install wget
+# wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/7.3.6/xampp-linux-x64-7.3.6-3-installer.run
+# chmod +x xampp-linux-x64-7.3.6-3-installer.run
+# ./xampp-linux-x64-1.8.3-3-installer.run
+# /opt/lampp/lampp restart
+
+1. # /opt/lampp/etc/httpd.conf
+2. # /opt/lampp/etc/extra/httpd-vhosts.conf
+3. # /opt/lampp/etc/extra/httpd-ssl.conf
+	/opt/lampp/etc/crt/shenyeymz.crt
+	/opt/lampp/etc/crt/shenyeymz.key
+	/opt/lampp/etc/crt/gd_bundle-g2-g1.crt

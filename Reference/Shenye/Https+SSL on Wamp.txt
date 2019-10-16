@@ -1,0 +1,33 @@
+How to use WAMP + SSL to open localhost over https:
+
+1.Download & install WampServer.
+2.Open a command prompt (WindowsKey + R > cmd > click OK) and enter the following commands.
+cd c:\wamp64\bin\apache\apache2.4.27\bin
+openssl genrsa -aes256 -out private.key 2048
+openssl rsa -in private.key -out private.key
+openssl req -new -x509 -nodes -sha1 -key private.key -out certificate.crt -days 36500 -config c:\wamp64\bin\apache\apache2.4.37\conf\openssl.cnf
+Note: You can pretty much answer the questions any way you want though real answers are best. The one question that really matters here is the FQDN. It should be: localhost.
+3.Move the private.key and certificate.crt files from c:\wamp64\bin\apache\apache2.4.27\bin to the c:\wamp64\bin\apache\apache2.4.27\conf\key\ folder. If the key folder doesn't already exist, create it.
+4.Using a text editor like Notepad, open c:\wamp64\bin\apache\apache2.4.27\conf\httpd.conf and un-comment following 3 lines:
+LoadModule ssl_module modules/mod_ssl.so
+Include conf/extra/httpd-ssl.conf
+LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
+5.Using a text editor like Notepad, open c:\wamp64\bin\apache\apache2.4.27\conf\extra\httpd-ssl.conf and apply the following changes:
+Below the line: <VirtualHost _default_:443>, check the following parameters to ensure they are configured correctly and not commented.
+-------------------------------------
+DocumentRoot "c:/wamp64/www"
+ServerName localhost:443
+ServerAdmin admin@example.com
+SSLSessionCache "shmcb:c:/wamp64/bin/apache/apache2.4.27/logs/ssl_scache(512000)"
+ErrorLog "c:/wamp64/bin/apache/apache2.4.27/logs/error.log"
+TransferLog "c:/wamp64/bin/apache/apache2.4.27/logs/access.log"
+SSLCertificateFile "c:/wamp64/bin/apache/apache2.4.27/conf/key/certificate.crt"
+SSLCertificateKeyFile "c:/wamp64/bin/apache/apache2.4.27/conf/key/private.key"
+-------------------------------------
+6.Save the file and close it.
+7.You are done. To check the validity of file, at the command prompt, enter:
+c:\wamp64\bin\apache\apache2.4.27\bin\httpd -t
+and then use your web browse to go to https://localhost/
+
+RewriteEngine on
+RewriteRule ^ "https://shenyeymz.com%{REQUEST_URI}" [END,QSA,R=permanent]

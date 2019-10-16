@@ -1,0 +1,1 @@
+openssl req -new -newkey rsa:2048 -nodes -out shenyeymz_com.csr -keyout shenyeymz_com.key -subj "/C=JP/ST=shizuoka/L=numazu/O=yamazen.co.ltd/OU=VPN service/CN=shenyeymz.com"

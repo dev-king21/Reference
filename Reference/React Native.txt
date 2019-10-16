@@ -1,0 +1,73 @@
+React Native Install 
+----------------------------------------------
+
+1. Node install 
+	node-v10.16.0-x64.msi download and install
+
+2. Run cmd and Run command 
+	npm install -g create-react-native-app
+	npm install -g expo-cli <--> npm cache clean --force
+	npm install -g react-native-cli
+	npm install -g yarn
+
+3. Create Project	
+	create-react-native-app MyReactNative
+	
+	npm run ejct 
+	
+	react-native run-android --verbose
+	
+4. React Native Projects
+https://github.com/ReactNativeNews/React-Native-Apps
+	https://github.com/wwayne/react-native-nba-app
+	https://github.com/race604/ZhiHuDaily-React-Native
+	https://github.com/JuneDomingo/movieapp
+	https://github.com/reindexio/reindex-examples/tree/master/react-native-gallery
+	
+	https://github.com/Illu/moonwalk
+	
+https://reactnativeexample.com
+https://github.com/jondot/awesome-react-native
+
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+
+5. apps
+https://market.nativebase.io/view/react-native-food-ordering-app
+https://reactnativeexample.com/a-simple-food-ordering-app-built-using-react-native/
+https://github.com/fabnicolas/react-native-food-delivery
+github.com:sivadass/react-native-food-delivery.git
+
+
+6. stores
+https://play.google.com/store/apps/details?id=io.market.nativebase.geekyants.foodorderingapp
+
+
+7. Issue
+Issue:
+	Unable to load script from assets ‘index.android.bundle’
+Solution
+	1.Go to your project directory and check if this folder exists android/app/src/main/assets
+		delete two files viz index.android.bundle and index.android.bundle.meta
+		If the folder assets doesn’t exist then create the assets directory there.
+	2. From your root project directory do
+		cd android
+		./gradlew clean
+	3. run following command in root directory
+		If root directory contains index.js only
+			react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+		If root directory contains index.js only
+			react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+	4. react-native run-android
+	
+Issue:
+	"React-Native Version Mismatch" Javascript Version 0.50.1 Native version: 0.50.0
+Solution:
+	if another react-native node console running, then Close all terminals and run build again.
+	
+Issue:
+	unable to load script. Make sure you're either running Metro server(run react-native start) or that your bundle 'index.android.bundle' is packaged correctly for release
+Solution:
+	react-native start
+	

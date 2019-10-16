@@ -1,0 +1,27 @@
+How to install vmware-tools
+---------------------------------------------------------------
+In Vmware Workstaion menu, you select menu VM/install VMWare Tools...
+You can see vmware-tools.iso file on your mac os desktop.
+Double click this file and install.
+While installing, you can see notification about accessiblity, you can enable.
+
+if u use Vmware-tools, u can change screen resolution mode and file sharing from host system(windows for you).
+In more detail, you can search by Google Grandpa.
+
+How to install cocoapods (Swift Third-Party Package Manager)
+---------------------------------------------------------------
+
+1. Install rbenv and Homebrew
+	run terminal from Application and run shell following commands.
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew install rbenv
+	
+2. Insall cocoaPods 	
+	sudo gem install cocoapods
+
+How to patch MacOS system
+------------------------------
+
+this is problem what should be discussed after above process finished success.
+Good Luck and I need good result for you.
+i'm sure that you can do it.

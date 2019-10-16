@@ -1,0 +1,6 @@
+http://java-online.ru/javax-mail.xhtml
+
+https://tech.yandex.com/domain/doc/reference/email-counters-docpage/
+
+https://ru.stackoverflow.com/questions/507801/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D1%87%D1%82%D1%83-%D1%81-mail-ru
+https://github.com/mailru/top-mail-ru

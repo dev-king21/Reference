@@ -1,0 +1,8 @@
+SITE_KEY
+6Lc1I60UAAAAAM9I3rJ0MOVmpuRPPXUEeCGqCO2T
+SECRET KEY
+6Lc1I60UAAAAAIqku-O8HwgVbcsalh7AD1zk59rC
+
+>https://www.google.com/recaptcha/admin
+https://developers.google.com/recaptcha/docs/v3 - client side
+https://developers.google.com/recaptcha/docs/verify - server side

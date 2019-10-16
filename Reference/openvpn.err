@@ -1,0 +1,9 @@
+-------------- error ------------------------
+Control Channel: TLSv1.2, cipher TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA 
+Peer Connection Initiated with [AF_INET]192.168.100.74:1194
+
+------------------ openvpn client to softether server  ------------------------
+Default hub is not matched
+Softether VPN은 접속시에 하브를 선택하여야 하는데 openvpn, IPSec/L2TP의 경우 하브를 생략하면 기정하브로 
+대치하여준다. 
+이 경우 대치된 하브에 유저가 없는 경우 오유가 발생한다.  

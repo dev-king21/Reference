@@ -1,0 +1,9 @@
+# New Server Operation 새로 구입한 서버에 사용자 설정함수
+	- new_server_user()함수 실행
+
+# Auto User Create With Random Password 임의의 암호를 가지는 다량의 사용자 생성함수
+	- create_groups() 함수 실행
+
+# Block된 사용자를 일반사용자로 전환하는 함수
+	- update memberinfo set status = 1 and is_new =1 and expired_date = "xxxx-xx-xx" 로 설정
+	- server_user_changed() 함수 실행

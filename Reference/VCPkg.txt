@@ -1,0 +1,21 @@
+How to use vcpkg in Visual Studio 2017 and 2019
+
+1. clone vcpkg project 
+	git clone https://github.com/Microsoft/vcpkg.git
+2. build and install boost
+	cd vcpkg
+	.\vcpkg integrate install
+	
+	open scripts\vcpkgTools.xml and change that line
+		<tool name="powershell-core" os="windows">
+			<version>6.2.3</version>
+			<exeRelativePath>pwsh.exe</exeRelativePath>
+			<url>https://github.com/PowerShell/PowerShell/releases/download/v6.2.3/PowerShell-6.2.3-win-x86.zip</url>
+			<sha512>9b56c68aa8145936b188028409723c2fd537f08d3132a9bf5a486d2d1ad844a1cb101587e17671d9682bdc3568c70a600235e359c6cf1b1063446185f9c6bf0e</sha512>
+			<archiveName>PowerShell-6.2.3-win-x86.zip</archiveName>
+		</tool>
+		
+	boost install
+		.\vcpkg install --triplet x64-windows boost
+		.\vcpkg install --triplet x64-windows jsoncons
+ 

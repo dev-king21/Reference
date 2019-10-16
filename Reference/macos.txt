@@ -1,0 +1,100 @@
+﻿Install Mac OS System into vmware workstatioin
+--------------------------------------------------------------------------------------
+https://techsviewer.com/how-to-install-macos-10-15-catalina-on-vmware-on-windows-pc/
+
+---------------------- Mac OS System Infomation --------------------
+#### open vmx file and Find "board-id.reflectHost", insert following.
+#### vm
+
+board-id.reflectHost = "FALSE"
+board-id = "Mac-BE088AF8C5EB4FA2"
+hw.model.reflectHost = "FALSE"
+hw.model = "iMac18,3"
+serialNumber.reflectHost = "FALSE"
+serialNumber = "C02TC4YKJ1GJ"
+smbios.reflectHost = "FALSE"
+efi.nvram.var.ROM.reflectHost = "FALSE"
+efi.nvram.var.MLB.reflectHost = "FALSE"
+efi.nvram.var.ROM = "3c0754a2f9be"
+
+
+---------------------- ruby env setting -------------------------------------
+
+"I'm not sure I installed rbenv and a ruby version correctly"
+Yep, sure it can be tricky.
+
+1.sudo xcode-select --install
+sudo xcode-select --switch /Applications/Xcode.app
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2.Install rbenv 
+	brew install rbenv
+3.Add eval "$(rbenv init -)" to the end of ~/.zshrc or ~/.bash_profile
+4.Install a ruby version rbenv install 2.3.0
+5.Select a ruby version by rbenv rbenv global 2.3.0
+6.Open a new terminal window
+	Verify that the right gem folder is being used with gem env home (should report something in your user folder not system wide)
+"I want to use bundler and rbenv together"
+Perfect match!
+
+Make sure you installed rbenv correctly ☝️
+Select a ruby version locally for the folder you are located in e.g. rbenv local 2.3.0 (this creates a file called .ruby-version in the directory)
+Verify that the right gem folder is being used with gem env home (should report something in your user folder not system wide)
+Run gem install bundler
+Run bundle install
+Run on of your favorite gems defined in the Gemfile by bundle exec ... e.g. bundle exec fastlane
+"I want to install a gem on user for a specific version of ruby"
+Nice, rbenv is your friend.
+
+Make sure you installed rbenv correctly ☝️
+Select a ruby version globally by e.g. rbenv global 2.3.0 or even better locally for the folder you are located in e.g. rbenv local 2.3.0
+Run gem install ...
+"I want to install a gem globally on my system ruby"
+Then why are you using rbenv? Okay, if you decide this is the right option for you then go ahead with sudo gem install ...
+
+
+---------------------- Engine for installing Third Party Library by Ruby --------------------------------------
+sudo gem install cocoapods
+
+-------------------------------
+pod install
+
+
+---------------------- error: pod install -------------------------------------
+xcrun: error: SDK “iphoneos” cannot be located
+Command Line Tools -> xcode version matching
+Xcode → Preferences → Locations, and make sure the command line tools is set to the version of Xcode you’re using.
+
+---------------------- Third Party Library ---------------------------------------
+
+Alamofire, AFNetworking ----- Rest Web API Library in swift
+SwiftyJSON ------------------ JSON Parsing Library in swift
+TunnelKit ------------------- OpenVPN Library in swift
+BlueSocket ------------------ Socket Library in swift
+BlueSSLService -------------- SSL Socket Library in swift
+
+
+---------------------- build OpenSSL ------------------------------------
+https://medium.com/@joncardasis/openssl-swift-everything-you-need-to-know-2a4f9f256462
+https://www.openssl.org/source/
+buildOpenSSL.sh -> checksum above openssl site
+
+##### Error - curl: (3) Illegal characters found in URL
+~~~~~ Open sh file and replace "\r" to "" !!
+
+##### Error - load failed with error Error Domain=NSURLErrorDomain Code=-1005 "The network connection was lost."
+~~~~~ Project-> Targets-> App Sandbox -> Network -> Incoming, Outcoming check !!
+
+iphone USB Connect to mac OS Computer
+--------------------------------------
+https://www.isunshare.com/mac/vmware-mac-os-x-not-recognize-ios-device.html
+
+
+------------ Apple id 
+Apple ID:	k3k3k3@yahoo.com
+password:	Ghostman123!@# 
+Country: 	china mainland
+
+Security Question ----
+ - first name of best friends in high school - jhone
+ - job - ceo
+ - city where parents first met - london

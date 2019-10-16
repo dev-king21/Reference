@@ -1,0 +1,3 @@
+https://github.com/Microsoft/vcpkg
+https://github.com/microsoft/cpprestsdk
+https://devblogs.microsoft.com/cppblog/intercepting-http-requestresponse-using-c-rest-http-library/

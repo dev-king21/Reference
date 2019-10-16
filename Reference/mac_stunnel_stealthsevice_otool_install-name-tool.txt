@@ -1,0 +1,44 @@
+1. stunnel build 
+----------------
+./configure CC="gcc -mmacosx-version-min = 10.12"
+make
+make install
+
+2. stunnel libcrypto.1.0.0.dylib, libssl.1.0.0.dylib patch using "otool" and "install_name_tool"
+------------------------------------------------------------------------------------------------
+install_name_tool -add_rpath @executable_path/. ./shenyestealthservice
+install_name_tool -change ~~ @executable_path/libcrypto.1.0.0.dyblib ./shenyestealthservice
+install_name_tool -change /usr/local/opt/openssl/lib/libssl.1.0.0.dylib @executable_path/libssl.1.0.0.dylib ./shenyestealthservice
+
+-- as well as libssl.1.0.0.dylib 
+
+
+
+3. codesign with entitlements configuring app-sandbox
+codesign -f -s "$YOUR_CERTIFICATE_HERE" --entitlements "$THE_ENTITLEMENTS_PLIST" "$THE_EXECUTABLE"
+----------------------------------------------------------------------------------------------------
+codesign -f -s 6BC9685AF0504182DBF99E7E50384098052C87FB -o runtime --entitlements ./info.plist ./shenyestealthservice
+codesign -d --entitlements - ./shenyestealthservice
+
+codesign -f -s 6BC9685AF0504182DBF99E7E50384098052C87FB ./libcrypto.1.0.0.dylib
+codesign -f -s 6BC9685AF0504182DBF99E7E50384098052C87FB ./libssl.1.0.0.dylib
+
+
+4. Openssl framework patch 
+symbolic link create
+ln -s /path/to/original /path/to/link
+
+----------------------------------------------
+Framework Structure
+	MyFramework.framework/
+    MyFramework  -> Versions/Current/MyFramework
+    Resources    -> Versions/Current/Resources
+    Versions/
+        A/
+            MyFramework
+            Resources/
+                English.lproj/
+                    InfoPlist.strings
+                Info.plist
+        Current  -> A
+------------------------------------------------

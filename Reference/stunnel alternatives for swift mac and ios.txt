@@ -1,0 +1,4 @@
+- General Socket
+https://github.com/Balancingrock/SwifterSockets
+- Secure Socket
+https://github.com/Balancingrock/SecureSockets

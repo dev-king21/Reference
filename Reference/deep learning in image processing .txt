@@ -1,0 +1,39 @@
+https://medium.com/nybles/create-your-first-image-recognition-classifier-using-cnn-keras-and-tensorflow-backend-6eaab98d14dd
+
+convolution
+	
+https://courses.learnopencv.com/p/computer-vision-for-faces
+
+
+I'll try this!!!!!
+https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+
+!~   Python  ~!
+
+- tensorflow install
+	pip install tensorflow-gpu
+
+- object detection api package install
+	https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
+	Cython
+		The scripts cygdb.exe, cython.exe and cythonize.exe are installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  
+	jupyter
+		The scripts jupyter-migrate.exe, jupyter-troubleshoot.exe and jupyter.exe are installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		The scripts jupyter-kernel.exe, jupyter-kernelspec.exe and jupyter-run.exe are installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		The script pygmentize.exe is installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		The scripts iptest.exe, iptest3.exe, ipython.exe and ipython3.exe are installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		The script jsonschema.exe is installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		The script jupyter-trust.exe is installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		The script jupyter-nbconvert.exe is installed in 'C:\Users\GoldRight\AppData\Roaming\Python\Python37\Scripts' which is not on PATH.
+		Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+		
+- protoc version 3.4.0  ! important -- not latest !!!

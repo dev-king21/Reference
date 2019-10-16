@@ -1,0 +1,16 @@
+﻿Step 1 − Visit the following URL and download composer to install it on your system.
+	https://getcomposer.org/download/
+
+Step 2 - Create Laravel new project 
+	composer create-project laravel/laravel –-prefer-dist
+	composer create-project laravel/laravel test dev-develop
+
+Step 3 - To increase the performance and to boost the web application, it is important to cache all the configuration values.
+	php artisan config:cache
+
+Step 4 - Maintenance Mode
+	php artisan down  // Maintenance Mode enable
+	php artisan up	  // Maintenance Mode disable
+	
+Step 5 - Middleware
+	php artisan make:middleware AgeMiddleware
